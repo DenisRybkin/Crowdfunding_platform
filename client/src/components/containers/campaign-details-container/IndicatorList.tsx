@@ -8,8 +8,8 @@ interface IndicatorListProps {
 export const IndicatorList = (props: IndicatorListProps) => {
   return (
     <div className="flex md:w-[150px] w-full flex-wrap justify-between gap-[30px]">
-      {props.data.map(item => (
-        <CountBox title={item.title} value={item.value} />
+      {props.data.map((item, index) => (
+        <CountBox key={index} title={item.title} value={item.value} />
       ))}
     </div>
   );

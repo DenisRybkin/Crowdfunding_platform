@@ -59,6 +59,7 @@ export const StateContextProvider = (props: StateContextProviderProps) => {
         index,
       }));
     } catch (e) {
+      console.log(e);
       toast.error('Contract call failure');
       return [];
     }

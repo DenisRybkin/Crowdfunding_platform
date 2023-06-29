@@ -31,7 +31,7 @@ export const CampaignsListContainer = (props: CampaignsListContainerProps) => {
 
   const componentData: IDataByStrategy = useMemo(
     () => getComponentDataByStrategy(state, props.strategy),
-    [state?.address]
+    [state?.address, state?.contract]
   );
 
   const loadCampaigns = async () => {

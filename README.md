@@ -1,1 +1,1 @@
-DEMO: https://crowdfund1ng.netlify.app/profile
+DEMO: https://crowdfund1ng.netlify.app
